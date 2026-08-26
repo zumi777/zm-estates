@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ZM Real Estate — Private property brokerage in Dubai</title>
+<meta name="description" content="ZM Real Estate is a boutique Dubai brokerage placing owner-direct apartments, townhouses and off-plan investments across JVC, Business Bay, Damac Lagoons, Meydan and Dubai Creek Harbour." />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<meta name="theme-color" content="#1A1712" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<link rel="canonical" href="https://YOUR-DOMAIN.example/" />
+
+<!-- Social sharing -->
+<meta property="og:site_name" content="ZM Real Estate" />
+<meta property="og:title" content="ZM Real Estate — Private property brokerage in Dubai" />
+<meta property="og:description" content="Owner-direct apartments, townhouses and off-plan opportunities across Dubai." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://YOUR-DOMAIN.example/" />
+<meta property="og:image" content="https://YOUR-DOMAIN.example/og-image.jpg" />
+<meta property="og:image:alt" content="ZM Real Estate — Dubai property brokerage" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ZM Real Estate — Private property brokerage in Dubai" />
+<meta name="twitter:description" content="Owner-direct apartments, townhouses and off-plan opportunities across Dubai." />
+<meta name="twitter:image" content="https://YOUR-DOMAIN.example/og-image.jpg" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/favicon.svg" />
+
+<!-- Performance hints for external assets -->
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+<link rel="preconnect" href="https://wa.me" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* ============ Tokens ============ */
+  :root{
+    --bone:#FBF8F2;
+    --sand:#F1EADD;
+    --sand-2:#E7DCC8;
+    --ink:#1A1712;
+    --ink-2:#231F18;
+    --ink-3:#2E2920;
+    --brass:#B08A4E;
+    --brass-hi:#C9A968;
+    --brass-ink:#7C5E2E;
+    --gulf:#1E4E48;
+    --gulf-hi:#2F6B62;
+    --stone:#6E6656;
+    --stone-2:#9C917D;
+    --paper-text:#231F18;
+    --dark-text:#ECE5D7;
+    --dark-muted:#A99E88;
+
+    --maxw:1240px;
+    --gutter:clamp(20px,5vw,64px);
+
+    --f-display:"Cormorant Garamond",Georgia,serif;
+    --f-body:"Manrope",system-ui,-apple-system,sans-serif;
+    --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+
+    --step--1:clamp(.78rem,.75rem + .2vw,.86rem);
+    --step-0:clamp(1rem,.96rem + .2vw,1.08rem);
+    --step-1:clamp(1.2rem,1.1rem + .5vw,1.45rem);
+    --step-2:clamp(1.6rem,1.35rem + 1.1vw,2.2rem);
+    --step-3:clamp(2.2rem,1.7rem + 2.4vw,3.6rem);
+    --step-4:clamp(3rem,2rem + 4.6vw,6.4rem);
+
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+
+  /* ============ Reset ============ */
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0}
+  img{display:block;max-width:100%;height:auto}
+  button,input,select,textarea{font:inherit;color:inherit}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4,p{margin:0}
+  ul{margin:0;padding:0;list-style:none}
+
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  body{
+    font-family:var(--f-body);
+    font-size:var(--step-0);
+    line-height:1.65;
+    color:var(--paper-text);
+    background:var(--bone);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+
+  ::selection{background:var(--brass);color:var(--ink)}
+
+  /* ============ Shared bits ============ */
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+  .section{padding-block:clamp(72px,10vw,140px)}
+
+  .eyebrow{
+    font-family:var(--f-mono);
+    font-size:var(--step--1);
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--brass-ink);
+    display:inline-flex;
+    align-items:center;
+    gap:.7em;
+  }
+  .eyebrow::before{
+    content:"";
+    width:26px;height:1px;
+    background:var(--brass);
+    display:inline-block;
+  }
+  .eyebrow.on-dark{color:var(--brass-hi)}
+
+  .display{
+    font-family:var(--f-display);
+    font-weight:400;
+    line-height:1.02;
+    letter-spacing:-.01em;
+  }
+  .display em{font-style:italic;color:var(--brass-ink)}
+
+  .lede{
+    color:var(--stone);
+    max-width:52ch;
+    font-weight:400;
+  }
+
+  .btn{
+    display:inline-flex;align-items:center;gap:.7em;
+    font-family:var(--f-mono);
+    font-size:var(--step--1);
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    padding:1.05em 1.6em;
+    border:1px solid transparent;
+    border-radius:2px;
+    cursor:pointer;
+    transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease);
+  }
+  .btn .arw{transition:transform .35s var(--ease)}
+  .btn:hover .arw{transform:translateX(4px)}
+  .btn-primary{background:var(--ink);color:var(--dark-text)}
+  .btn-primary:hover{background:var(--brass);color:var(--ink)}
+  .btn-ghost{border-color:currentColor;color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--dark-text);border-color:var(--ink)}
+  .btn-ghost.on-dark{color:var(--dark-text)}
+  .btn-ghost.on-dark:hover{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+
+  :focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
+
+  /* mashrabiya lattice motif (Gulf geometric screen) */
+  .lattice{
+    background-image:
+      linear-gradient(45deg,transparent 46%,currentColor 46%,currentColor 54%,transparent 54%),
+      linear-gradient(-45deg,transparent 46%,currentColor 46%,currentColor 54%,transparent 54%);
+    background-size:26px 26px;
+    color:var(--brass);
+    opacity:.14;
+  }
+
+
+  /* ============ Production hardening ============ */
+  :where(a,button,input,select,textarea){-webkit-tap-highlight-color:transparent}
+  button{appearance:none}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .form-status{min-height:1.5em;margin-top:10px;color:var(--dark-muted);font-size:.78rem}
+  .form-status.error{color:#E8A6A6}
+  .form-status.success{color:#BFD8B5}
+  .honeypot{position:absolute !important;left:-9999px !important;width:1px !important;height:1px !important;opacity:0 !important;pointer-events:none !important}
+  @media (prefers-reduced-motion:reduce){
+    .hero-sky,.hero-photo,.hero-scroll .line::after{animation:none !important}
+  }
+
+  /* ============ Header ============ */
+  .site-head{
+    position:fixed;inset:0 0 auto 0;z-index:100;
+    transition:background .4s var(--ease),box-shadow .4s var(--ease),padding .4s var(--ease);
+    padding-block:22px;
+  }
+  .site-head.is-scrolled{
+    background:color-mix(in srgb,var(--bone) 92%,transparent);
+    backdrop-filter:blur(12px);
+    box-shadow:0 1px 0 rgba(26,23,18,.08);
+    padding-block:14px;
+  }
+  .head-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:center;gap:.7em}
+  .brand .mono{
+    width:38px;height:38px;flex:none;
+    display:grid;place-items:center;
+    border:1px solid var(--brass);
+    font-family:var(--f-display);font-size:1.25rem;font-weight:600;
+    color:var(--ink);
+    position:relative;
+  }
+  .brand .mono::after{content:"";position:absolute;inset:4px;border:1px solid color-mix(in srgb,var(--brass) 45%,transparent)}
+  .site-head.on-hero:not(.is-scrolled) .brand .mono{color:var(--dark-text);border-color:var(--brass-hi)}
+  .brand .word{line-height:1.05}
+  .brand .word b{font-weight:600;letter-spacing:.02em;font-size:1.02rem}
+  .brand .word span{
+    display:block;font-family:var(--f-mono);font-size:.62rem;
+    letter-spacing:.34em;text-transform:uppercase;color:var(--stone);
+  }
+  .site-head.on-hero:not(.is-scrolled) .brand .word,
+  .site-head.on-hero:not(.is-scrolled) .brand .word span{color:var(--dark-text)}
+  .site-head.on-hero:not(.is-scrolled) .brand .word span{color:var(--dark-muted)}
+
+  .nav{display:flex;align-items:center;gap:34px}
+  .nav a{
+    font-size:.92rem;font-weight:500;color:var(--stone);
+    position:relative;padding-block:4px;
+    transition:color .3s var(--ease);
+  }
+  .nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--brass);transition:width .3s var(--ease)}
+  .nav a:hover{color:var(--ink)}
+  .nav a:hover::after{width:100%}
+  .site-head.on-hero:not(.is-scrolled) .nav a{color:var(--dark-muted)}
+  .site-head.on-hero:not(.is-scrolled) .nav a:hover{color:var(--dark-text)}
+
+  .head-cta{display:flex;align-items:center;gap:16px}
+  .head-cta .btn{padding:.75em 1.2em}
+  .site-head.on-hero:not(.is-scrolled) .head-cta .btn-primary{background:var(--bone);color:var(--ink)}
+  .site-head.on-hero:not(.is-scrolled) .head-cta .btn-primary:hover{background:var(--brass)}
+
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+  .menu-btn span{width:24px;height:2px;background:currentColor;display:block;transition:transform .3s var(--ease),opacity .3s var(--ease)}
+  .site-head.on-hero:not(.is-scrolled) .menu-btn{color:var(--dark-text)}
+
+  /* ============ Hero ============ */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--dark-text);overflow:hidden;background:var(--ink)}
+  .hero-sky{
+    position:absolute;inset:0;z-index:0;
+    background:
+      radial-gradient(120% 90% at 78% 8%, #E8B776 0%, rgba(232,183,118,0) 42%),
+      radial-gradient(140% 120% at 88% 0%, #C98C4E 0%, rgba(201,140,78,0) 38%),
+      linear-gradient(180deg,#3a2e20 0%, #241d15 46%, #16130d 100%);
+    animation:skyshift 22s var(--ease) infinite alternate;
+  }
+  @keyframes skyshift{
+    0%{transform:scale(1.02) translateY(0)}
+    100%{transform:scale(1.08) translateY(-1.5%)}
+  }
+  .hero-photo{
+    position:absolute;inset:0;z-index:1;
+    background-size:cover;background-position:center 30%;
+    mix-blend-mode:luminosity;opacity:.5;
+    animation:kenburns 26s var(--ease) infinite alternate;
+  }
+  @keyframes kenburns{0%{transform:scale(1.05)}100%{transform:scale(1.16)}}
+  .hero-scrim{position:absolute;inset:0;z-index:2;background:
+      linear-gradient(180deg, rgba(18,15,10,.55) 0%, rgba(18,15,10,.15) 30%, rgba(18,15,10,.35) 62%, rgba(18,15,10,.92) 100%),
+      linear-gradient(90deg, rgba(18,15,10,.6) 0%, rgba(18,15,10,0) 55%);}
+  .hero-lattice{position:absolute;right:0;top:0;width:min(44vw,520px);height:100%;z-index:2;
+      -webkit-mask-image:linear-gradient(90deg,transparent,#000 60%);mask-image:linear-gradient(90deg,transparent,#000 60%)}
+
+  .hero-inner{position:relative;z-index:3;width:100%;padding-bottom:clamp(40px,7vw,88px);padding-top:140px}
+  .hero-eyebrow{color:var(--brass-hi)}
+  .hero h1{
+    font-family:var(--f-display);
+    font-weight:300;
+    font-size:var(--step-4);
+    line-height:.98;
+    letter-spacing:-.015em;
+    max-width:16ch;
+    margin-top:.5em;
+  }
+  .hero h1 em{font-style:italic;color:var(--brass-hi)}
+  .hero-sub{margin-top:1.6rem;max-width:46ch;color:var(--dark-muted);font-size:var(--step-1);font-weight:300;line-height:1.5}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:2.4rem}
+
+  .hero-reveal{overflow:hidden;display:block}
+  .hero-reveal>*{display:block;transform:translateY(102%);animation:riseIn 1s var(--ease) forwards}
+  .hero-reveal.d1>*{animation-delay:.15s}
+  .hero-reveal.d2>*{animation-delay:.3s}
+  .hero-reveal.d3>*{animation-delay:.45s}
+  @keyframes riseIn{to{transform:translateY(0)}}
+
+  .hero-scroll{position:absolute;left:var(--gutter);bottom:26px;z-index:3;display:flex;align-items:center;gap:.8em;
+      font-family:var(--f-mono);font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dark-muted)}
+  .hero-scroll .line{width:52px;height:1px;background:var(--brass-hi);position:relative;overflow:hidden}
+  .hero-scroll .line::after{content:"";position:absolute;inset:0;background:var(--bone);animation:sweep 2.6s var(--ease) infinite}
+  @keyframes sweep{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
+  .hero-coords{position:absolute;right:var(--gutter);bottom:26px;z-index:3;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.24em;color:var(--dark-muted);text-align:right}
+
+  /* ============ Ticker / transacted strip ============ */
+  .strip{background:var(--ink);color:var(--dark-text);border-top:1px solid rgba(176,138,78,.25)}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(176,138,78,.18);padding-inline:0}
+  .strip .cell{background:var(--ink);padding:clamp(28px,4vw,44px) var(--gutter)}
+  .strip .cell:first-child{padding-left:var(--gutter)}
+  .stat-num{font-family:var(--f-display);font-weight:400;font-size:var(--step-3);line-height:1;letter-spacing:-.01em}
+  .stat-num b{color:var(--brass-hi);font-weight:400}
+  .stat-lab{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dark-muted);margin-top:.9em}
+
+  /* ============ Section header ============ */
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,64px)}
+  .sec-head h2{font-family:var(--f-display);font-weight:400;font-size:var(--step-3);line-height:1.02;letter-spacing:-.01em;max-width:16ch}
+  .sec-head h2 em{font-style:italic;color:var(--brass-ink)}
+  .sec-head .lede{margin-top:1rem}
+  .sec-head .aside{max-width:34ch}
+
+  /* ============ Portfolio ============ */
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px}
+  .filters button{
+    background:none;border:1px solid var(--sand-2);border-radius:2px;
+    padding:.6em 1.1em;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--stone);cursor:pointer;transition:all .3s var(--ease)}
+  .filters button:hover{border-color:var(--ink);color:var(--ink)}
+  .filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--dark-text)}
+
+  .grid-props{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.4vw,34px)}
+  .card{grid-column:span 1;transition:opacity .4s var(--ease),transform .4s var(--ease)}
+  .card.is-hidden{display:none}
+  .card .media{
+    position:relative;aspect-ratio:4/3.2;overflow:hidden;border-radius:3px;
+    background:linear-gradient(135deg,var(--gulf),var(--ink));
+  }
+  .card:nth-child(3n+2) .media{background:linear-gradient(135deg,#5a4a30,var(--ink))}
+  .card:nth-child(3n) .media{background:linear-gradient(135deg,var(--sand-2),var(--stone))}
+  .card .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+  .card:hover .media img{transform:scale(1.06)}
+  .card .badge{
+    position:absolute;top:14px;left:14px;z-index:2;
+    font-family:var(--f-mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;
+    background:color-mix(in srgb,var(--ink) 82%,transparent);color:var(--dark-text);
+    padding:.5em .8em;border-radius:2px;backdrop-filter:blur(4px)}
+  .card .ref{position:absolute;bottom:14px;right:14px;z-index:2;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;color:var(--dark-text);opacity:.9;text-shadow:0 1px 5px rgba(0,0,0,.55)}
+  .card-body{padding-top:18px}
+  .card .loc{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-ink)}
+  .card h3{font-family:var(--f-display);font-weight:500;font-size:var(--step-2);line-height:1.05;margin-top:.35em}
+  .card .price{font-family:var(--f-mono);font-size:.95rem;color:var(--ink);margin-top:.5em}
+  .card .price .aed{color:var(--stone);font-size:.8em}
+  .card .specs{display:flex;gap:18px;margin-top:14px;padding-top:14px;border-top:1px solid var(--sand-2);
+      font-size:.82rem;color:var(--stone)}
+  .card .specs b{color:var(--ink);font-weight:600}
+  .card .note{font-size:.82rem;line-height:1.45;color:var(--stone);margin-top:12px}
+  .card .links{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px}
+  .card .links a{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;
+      color:var(--brass-ink);text-decoration:none;border-bottom:1px solid transparent;
+      transition:border-color .2s var(--ease),color .2s var(--ease)}
+  .card .links a:hover,.card .links a:focus-visible{color:var(--ink);border-color:var(--brass)}
+  .portfolio-foot{margin-top:clamp(40px,5vw,64px);display:flex;justify-content:center}
+
+  /* ============ Communities ============ */
+  .communities{background:var(--sand)}
+  .grid-comm{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+  .comm{
+    position:relative;overflow:hidden;border-radius:3px;min-height:340px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:22px;color:var(--dark-text);
+    background:linear-gradient(160deg,var(--gulf),var(--ink));
+    transition:flex-grow .5s var(--ease)}
+  .comm.c-1{grid-column:span 3}
+  .comm.c-2{grid-column:span 3}
+  .comm.c-3{grid-column:span 2}
+  .comm.c-4{grid-column:span 2}
+  .comm.c-5{grid-column:span 2}
+  .comm.c-6{grid-column:span 3}
+  .comm.c-7{grid-column:span 3}
+  .comm .media{position:absolute;inset:0;z-index:0}
+  .comm .media img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+  .comm::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(18,15,10,.05) 0%,rgba(18,15,10,.2) 40%,rgba(18,15,10,.85) 100%)}
+  .comm:hover .media img{transform:scale(1.07)}
+  .comm>*{position:relative;z-index:2}
+  .comm .num{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.2em;color:var(--brass-hi)}
+  .comm h3{font-family:var(--f-display);font-weight:500;font-size:var(--step-2);line-height:1.02;margin-top:.4em}
+  .comm p{font-size:.86rem;color:var(--dark-muted);margin-top:.4em;max-width:34ch}
+  .comm .from{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;color:var(--dark-text);margin-top:.8em}
+
+  /* ============ How we work ============ */
+  .grid-serv{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--sand-2);border:1px solid var(--sand-2);border-radius:3px;overflow:hidden}
+  .serv{background:var(--bone);padding:clamp(28px,3.4vw,48px)}
+  .serv .idx{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.2em;color:var(--brass-ink)}
+  .serv h3{font-family:var(--f-display);font-weight:500;font-size:var(--step-2);margin-top:1.2rem;line-height:1.05}
+  .serv p{color:var(--stone);margin-top:.8rem;max-width:44ch}
+  .serv ul{margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:8px}
+  .serv li{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.06em;color:var(--stone);border:1px solid var(--sand-2);padding:.4em .7em;border-radius:2px}
+
+  /* ============ Track record band ============ */
+  .band{position:relative;background:var(--gulf);color:var(--dark-text);overflow:hidden}
+  .band .lattice{position:absolute;inset:0;color:var(--bone);opacity:.06}
+  .band .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,72px);align-items:center}
+  .band h2{font-family:var(--f-display);font-weight:300;font-size:var(--step-3);line-height:1.06;letter-spacing:-.01em}
+  .band h2 em{font-style:italic;color:var(--brass-hi)}
+  .band .quote-src{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dark-muted);margin-top:2rem}
+  .band-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:3px;overflow:hidden}
+  .band-stats .b{background:var(--gulf);padding:clamp(22px,3vw,34px)}
+  .band-stats .n{font-family:var(--f-display);font-size:var(--step-2);line-height:1;color:var(--brass-hi)}
+  .band-stats .l{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark-muted);margin-top:.8em}
+
+  /* ============ Statement ============ */
+  .statement .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,90px);align-items:start}
+  .statement .big{font-family:var(--f-display);font-weight:300;font-size:var(--step-3);line-height:1.08;letter-spacing:-.01em}
+  .statement .big em{font-style:italic;color:var(--brass-ink)}
+  .statement .body p{color:var(--stone);margin-bottom:1.2em}
+  .statement .body p:first-child{color:var(--ink)}
+  .sign{margin-top:2rem;display:flex;align-items:center;gap:16px}
+  .sign .who{line-height:1.3}
+  .sign .who b{font-weight:600}
+  .sign .who span{display:block;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--stone)}
+
+  /* ============ Contact ============ */
+  .contact{background:var(--ink);color:var(--dark-text)}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px)}
+  .contact h2{font-family:var(--f-display);font-weight:300;font-size:var(--step-3);line-height:1.04;letter-spacing:-.01em;max-width:14ch}
+  .contact h2 em{font-style:italic;color:var(--brass-hi)}
+  .contact .intro{color:var(--dark-muted);margin-top:1.2rem;max-width:42ch}
+  .contact-meta{margin-top:2.6rem;display:grid;gap:1.4rem}
+  .contact-meta .row .k{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-hi)}
+  .contact-meta .row .v{margin-top:.35em;font-size:1.02rem}
+  .contact-meta .row .v a:hover{color:var(--brass-hi)}
+
+  .form{background:var(--ink-2);border:1px solid rgba(176,138,78,.22);border-radius:4px;padding:clamp(24px,3vw,40px)}
+  .form .field{margin-bottom:20px}
+  .form label{display:block;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark-muted);margin-bottom:.6em}
+  .form input,.form select,.form textarea{
+    width:100%;background:var(--ink);border:1px solid rgba(255,255,255,.12);border-radius:2px;
+    padding:.9em 1em;color:var(--dark-text);transition:border-color .3s var(--ease)}
+  .form input::placeholder,.form textarea::placeholder{color:#6b6353}
+  .form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--brass)}
+  .form textarea{resize:vertical;min-height:96px}
+  .form .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .form .btn{width:100%;justify-content:center;margin-top:6px;background:var(--brass);color:var(--ink)}
+  .form .btn:hover{background:var(--brass-hi)}
+  .form .note{font-size:.76rem;color:var(--dark-muted);margin-top:14px;text-align:center;line-height:1.5}
+  .form-ok{display:none;text-align:center;padding:20px 0}
+  .form-ok.show{display:block}
+  .form-ok .tick{width:48px;height:48px;border:1px solid var(--brass);border-radius:50%;display:grid;place-items:center;margin:0 auto 16px;color:var(--brass-hi);font-size:1.4rem}
+  .form-ok h3{font-family:var(--f-display);font-size:var(--step-2);font-weight:500}
+  .form-ok p{color:var(--dark-muted);margin-top:.6em}
+
+  /* ============ Footer ============ */
+  .foot{background:#100d09;color:var(--dark-muted);padding-block:clamp(48px,6vw,80px) 32px}
+  .foot .top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .foot .brand .word b,.foot .brand .word span{color:var(--dark-text)}
+  .foot .brand .mono{color:var(--dark-text);border-color:var(--brass)}
+  .foot .about{margin-top:1.4rem;max-width:34ch;font-size:.9rem;line-height:1.6}
+  .foot h4{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-hi);margin-bottom:1.2rem}
+  .foot li{margin-bottom:.7em}
+  .foot li a{font-size:.92rem;transition:color .3s var(--ease)}
+  .foot li a:hover{color:var(--dark-text)}
+  .foot .bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-top:28px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em}
+  .foot .socials{display:flex;gap:18px}
+  .foot .socials a:hover{color:var(--brass-hi)}
+
+  /* ============ Reveal ============ */
+  [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  [data-reveal].is-visible{opacity:1;transform:none}
+  [data-reveal][data-delay="1"]{transition-delay:.08s}
+  [data-reveal][data-delay="2"]{transition-delay:.16s}
+  [data-reveal][data-delay="3"]{transition-delay:.24s}
+  [data-reveal][data-delay="4"]{transition-delay:.32s}
+
+  /* ============ Responsive ============ */
+  @media (max-width:1080px){
+    .grid-props{grid-template-columns:repeat(2,1fr)}
+    .grid-comm{grid-template-columns:repeat(4,1fr)}
+    .comm.c-1,.comm.c-2,.comm.c-6,.comm.c-7{grid-column:span 4}
+    .comm.c-3,.comm.c-4,.comm.c-5{grid-column:span 2}
+    .strip .wrap{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:860px){
+    .nav,.head-cta .btn-ghost{display:none}
+    .menu-btn{display:flex}
+    .band .wrap,.statement .wrap,.contact .wrap,.foot .top{grid-template-columns:1fr}
+    .foot .top{gap:36px}
+    .band-stats{margin-top:8px}
+    .hero-coords{display:none}
+  }
+  @media (max-width:620px){
+    .grid-props,.grid-serv{grid-template-columns:1fr}
+    .grid-comm{grid-template-columns:1fr}
+    .comm.c-1,.comm.c-2,.comm.c-3,.comm.c-4,.comm.c-5,.comm.c-6,.comm.c-7{grid-column:span 1}
+    .comm{min-height:300px}
+    .form .two{grid-template-columns:1fr}
+    .hero-coords{display:none}
+    .sec-head{align-items:flex-start}
+  }
+
+  /* mobile drawer */
+  .drawer{position:fixed;inset:0;z-index:200;background:var(--ink);color:var(--dark-text);
+      transform:translateY(-100%);transition:transform .5s var(--ease);display:flex;flex-direction:column;padding:var(--gutter)}
+  .drawer.open{transform:none}
+  .drawer .brand .mono{color:var(--dark-text);border-color:var(--brass)}
+  .drawer .d-top{display:flex;justify-content:space-between;align-items:center}
+  .drawer .close{background:none;border:0;color:var(--dark-text);font-size:1.6rem;cursor:pointer;line-height:1}
+  .drawer nav{margin-top:auto;margin-bottom:auto;display:grid;gap:8px}
+  .drawer nav a{font-family:var(--f-display);font-size:clamp(2rem,9vw,3rem);font-weight:400;color:var(--dark-text)}
+  .drawer nav a:hover{color:var(--brass-hi)}
+  .drawer .d-foot{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;color:var(--dark-muted);display:flex;justify-content:space-between}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important}
+    .hero-reveal>*{transform:none}
+    [data-reveal]{opacity:1;transform:none;transition:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ Header ============ -->
+<header class="site-head on-hero" id="head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top" aria-label="ZM Real Estate — home">
+      <span class="mono">ZM</span>
+      <span class="word"><b>ZM Real Estate</b><span>Brokerage · Dubai</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#portfolio">Properties</a>
+      <a href="#communities">Communities</a>
+      <a href="#services">How we work</a>
+      <a href="#firm">The firm</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="head-cta">
+      <a class="btn btn-ghost" href="#portfolio">View portfolio</a>
+      <a class="btn btn-primary" href="#contact">Book a viewing <span class="arw">→</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="d-top">
+    <span class="brand"><span class="mono">ZM</span></span>
+    <button class="close" id="drawerClose" aria-label="Close menu">×</button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="#portfolio" data-close>Properties</a>
+    <a href="#communities" data-close>Communities</a>
+    <a href="#services" data-close>How we work</a>
+    <a href="#firm" data-close>The firm</a>
+    <a href="#contact" data-close>Contact</a>
+  </nav>
+  <div class="d-foot"><span>+971 54 774 2284</span><span>+971 56 607 4264</span></div>
+</div>
+
+<main id="top">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-sky"></div>
+    <div class="hero-photo" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=80')" role="img" aria-label="Dubai skyline"></div>
+    <div class="hero-scrim"></div>
+    <div class="hero-lattice lattice"></div>
+    <div class="wrap hero-inner">
+      <span class="hero-reveal"><span class="eyebrow on-dark hero-eyebrow">Private property brokerage — Dubai</span></span>
+      <h1>
+        <span class="hero-reveal d1"><span>Own an address in the</span></span>
+        <span class="hero-reveal d2"><span>city that keeps <em>rewriting</em></span></span>
+        <span class="hero-reveal d3"><span>its own skyline.</span></span>
+      </h1>
+      <p class="hero-sub">ZM Real Estate brokers owner‑direct apartments, townhouses and off‑plan investments across Dubai's most active communities — from Jumeirah Village Circle and Business Bay to Damac Lagoons and Dubai Creek Harbour.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#portfolio">Browse the portfolio <span class="arw">→</span></a>
+        <a class="btn btn-ghost on-dark" href="#contact">Book a private viewing</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span class="line"></span> Scroll</div>
+    <div class="hero-coords">25.2048° N · 55.2708° E<br>Dubai, UAE</div>
+  </section>
+
+  <!-- ============ Transacted strip ============ -->
+  <section class="strip" aria-label="Track record">
+    <div class="wrap">
+      <div class="cell"><div class="stat-num"><b>34</b></div><div class="stat-lab">Live listings</div></div>
+      <div class="cell"><div class="stat-num">AED&nbsp;<b>128M</b></div><div class="stat-lab">Stock on the book</div></div>
+      <div class="cell"><div class="stat-num"><b>15</b></div><div class="stat-lab">Communities covered</div></div>
+      <div class="cell"><div class="stat-num"><b>100%</b></div><div class="stat-lab">Owner‑direct</div></div>
+    </div>
+  </section>
+
+  <!-- ============ Portfolio ============ -->
+  <section class="section" id="portfolio">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow" data-reveal>The portfolio</span>
+          <h2 class="display" data-reveal data-delay="1">Currently <em>on the market</em></h2>
+        </div>
+        <p class="lede aside" data-reveal data-delay="2">Every unit below is sourced <em>directly from the owner</em> — no sub‑listings, no inflated middle. Photos, video and floor plans for each are one tap away. Filter by what you're looking for.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter properties">
+        <button aria-pressed="true" data-filter="all">All</button>
+        <button aria-pressed="false" data-filter="apartment">Apartments</button>
+        <button aria-pressed="false" data-filter="villa">Villas &amp; townhouses</button>
+        <button aria-pressed="false" data-filter="offplan">Off‑plan</button>
+        <button aria-pressed="false" data-filter="investment">Investment</button>
+      </div>
+
+      <div class="grid-props" id="grid">
+
+        <!-- ===== Apartments ===== -->
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img fetchpriority="high" decoding="async" loading="eager" alt="Binghatti Nova residential tower, JVC Dubai" src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑001</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 12 · Dubai</div>
+            <h3>Binghatti Nova — 1107</h3>
+            <div class="price"><span class="aed">AED</span> 965,000</div>
+            <div class="specs"><span><b>1</b> bed</span><span><b>2</b> bath</span><span><b>636</b> sqft</span></div>
+            <div class="note">Smart home by Binghatti. Pool, gym & park amenities.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/8Q7QJu6v9qPjMaSg7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1-HjlOBaOGw0xm9lj0j6wyIfXZTp5TgQQ?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Vacant</span><img decoding="async" loading="eager" alt="Binghatti Nova residential tower, JVC Dubai" src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑002</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 12 · Dubai</div>
+            <h3>Binghatti Nova — 412</h3>
+            <div class="price"><span class="aed">AED</span> 975,000</div>
+            <div class="specs"><span><b>1</b> bed</span><span><b>2</b> bath</span><span><b>844</b> sqft</span></div>
+            <div class="note">Big‑size corner unit. Park, pool &amp; community view.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/8Q7QJu6v9qPjMaSg7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1COnPkIDn2vv1OlkXKAywYtYR90tVyfBM?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Vacant</span><img decoding="async" loading="eager" alt="Binghatti Heights building, JVC Dubai" src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑003</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 10 · Dubai</div>
+            <h3>Binghatti Heights — 205</h3>
+            <div class="price"><span class="aed">AED</span> 950,000</div>
+            <div class="specs"><span><b>1</b> bed</span><span><b>2</b> bath</span></div>
+            <div class="note">Smart home. Five Hotel, amenities &amp; community view.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/iPYJJWc1NA2HdmFm8" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1-Kl0MK9V4FtR6PqQhqFchP7WyaCB41Hf?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Vacant</span><img decoding="async" loading="eager" alt="Casa Grande residential tower, JVC Dubai" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑004</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 11 · Dubai</div>
+            <h3>Casa Grande — 404</h3>
+            <div class="price"><span class="aed">AED</span> 1,050,000</div>
+            <div class="specs"><span><b>2</b> bed</span><span>Private pool</span></div>
+            <div class="note">Huge layout, steps from Circle Mall. By Al Jadeed Holding.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/tyJddNS6f1bKVaVw7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1gREYilfdBVMHoW7QOec5s5SuBAOf1wwJ?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="eager" alt="Binghatti Gardenia towers, JVC Dubai" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑005</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 11 · Dubai</div>
+            <h3>Binghatti Gardenia — 2106</h3>
+            <div class="price"><span class="aed">AED</span> 1,100,000</div>
+            <div class="note">Smart home with Burj Al Arab &amp; Burj Khalifa views.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/Eyg4ji3iiRiKnWPh8" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1gkvEzfX5B0J4VrzpaJwmdWCbCTBfQH2E?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="eager" alt="Binghatti Apex tower, JVC Dubai" src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑006</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 10 · Dubai</div>
+            <h3>Binghatti Apex — 3309</h3>
+            <div class="price"><span class="aed">AED</span> 1,240,000</div>
+            <div class="note">High floor, smart home, TEKA kitchen. Al Khail, Emirates Hills &amp; Marina views.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/YhE27XmKVMk6PncX6" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1C0l_1gh1GI4-Lzfb8zT91gikYs_k6xxA?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Binghatti Apex tower, JVC Dubai" src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑007</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 10 · Dubai</div>
+            <h3>Binghatti Apex — 3308</h3>
+            <div class="price"><span class="aed">AED</span> 1,300,000</div>
+            <div class="note">High floor, smart home, TEKA kitchen. Al Khail, Emirates Hills &amp; Marina views.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/YhE27XmKVMk6PncX6" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1zRr7bYG2noTfWEyz21FuMHlAHPX7RaqB?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Binghatti House building, JVC Dubai" src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑008</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 10 · Dubai</div>
+            <h3>Binghatti House — 1105</h3>
+            <div class="price"><span class="aed">AED</span> 1,605,000</div>
+            <div class="note">Royal suite with private pool. Marina &amp; JVC villa‑community view.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/epL7k6ENBSugenzz5" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1syLAPdBtjFwo1YdhW8U7iIY0Dqlxu4tF?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Furnished</span><img decoding="async" loading="lazy" alt="Joya Verde Residence, JVC Dubai" src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑009</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 11 · Dubai</div>
+            <h3>Joya Verde Residence — 310</h3>
+            <div class="price"><span class="aed">AED</span> 1,475,000</div>
+            <div class="specs"><span><b>3</b> bed</span><span>Furnished</span></div>
+            <div class="note">Upgraded 2‑bed reconfigured to 3‑bed. Rooftop garden, jacuzzi &amp; gym.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/YedKaFbNccBQpVKk8" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/18Urm_k2omCQTxLvJYP-Qimo2qDWZY0KE?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Furnished</span><img decoding="async" loading="lazy" alt="Binghatti Crest tower, JVC Dubai" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑010</span></div>
+          <div class="card-body">
+            <div class="loc">JVC District 13 · Dubai</div>
+            <h3>Binghatti Crest — 1007</h3>
+            <div class="price"><span class="aed">AED</span> 1,790,000</div>
+            <div class="note">Fully furnished with kitchen appliances &amp; smart home. Pool &amp; community view.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/3weR7asM1iLUbmAS7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1b5QA4Gas_0Jibtn9e3FbexIt1T3ufdA4?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Green Diamond tower, Arjan Dubai" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑016</span></div>
+          <div class="card-body">
+            <div class="loc">Arjan · Dubai</div>
+            <h3>Green Diamond 1 — A‑609</h3>
+            <div class="price"><span class="aed">AED</span> 970,000</div>
+            <div class="specs"><span><b>1</b> bed</span></div>
+            <div class="note">Community &amp; Nord Anglia School view. Gym &amp; pool. By Diamond Developers.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/wvrWy3aCJi8VMv3H8" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1mDJ8o_W9gb07pOVhK2hRGHq0wFmOv1cX?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Dubai Hills green residential community" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑017</span></div>
+          <div class="card-body">
+            <div class="loc">Dubai Hills Estate</div>
+            <h3>Hills Park — 224</h3>
+            <div class="price"><span class="aed">AED</span> 1,600,000</div>
+            <div class="specs"><span><b>2</b> bed</span><span><b>2</b> bath</span></div>
+            <div class="note">Under handover. Green amenities, pools, park &amp; golf‑course access.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/hGJUxZZJ8XnhWhkm7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1XpJC1P3FB--Ckb7j5LSYWm5ThHlhK_B1?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Equiti Home building, Al Furjan Dubai" src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑018</span></div>
+          <div class="card-body">
+            <div class="loc">Al Furjan · Dubai</div>
+            <h3>Equiti Home — B‑311</h3>
+            <div class="price"><span class="aed">AED</span> 945,000</div>
+            <div class="specs"><span><b>3</b> master bed</span><span><b>4</b> bath</span></div>
+            <div class="note">Payment plan: AED 586,238 on handover. Pool, gym, padel &amp; landscaped podium.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/6MSNWJzG8E6ZVaKc9" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/175AIcXXu8CTPhw3cuYV9exdauXzYRRvM?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Aykon City towers, Business Bay Dubai" src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑019</span></div>
+          <div class="card-body">
+            <div class="loc">Business Bay · Dubai</div>
+            <h3>Aykon City · Tower C — 3108</h3>
+            <div class="price"><span class="aed">AED</span> 1,720,000</div>
+            <div class="note">Canal, pools &amp; Meydan racecourse view. Kitchen appliances. By Damac.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/gfWeHHT3sDXqGmmbA" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1K_BZv9bdFywaRocji3g5ZCaYXJJjQssm?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Furnished</span><img decoding="async" loading="lazy" alt="Aykon City towers, Business Bay Dubai" src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑020</span></div>
+          <div class="card-body">
+            <div class="loc">Business Bay · Dubai</div>
+            <h3>Aykon City · Tower C — 1910</h3>
+            <div class="price"><span class="aed">AED</span> 1,590,000</div>
+            <div class="note">Furnished with kitchen appliances. Canal, pools &amp; racecourse view. By Damac.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/gfWeHHT3sDXqGmmbA" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1_Hdx0abP8oSkHwOxonWphQninMF4600c?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Furnished</span><img decoding="async" loading="lazy" alt="Damac Majestine tower, Business Bay Dubai" src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑021</span></div>
+          <div class="card-body">
+            <div class="loc">Business Bay · Dubai</div>
+            <h3>Damac Majestine — 715</h3>
+            <div class="price"><span class="aed">AED</span> 2,395,000</div>
+            <div class="note">Luxury‑upgraded &amp; fully furnished, two parking bays. Park &amp; pool view.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/ktXVm76MKMu9dh2R6" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1vYKFhrPBRD8QVdHokGO4JPkadyiHb5jS?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Vacant</span><img decoding="async" loading="lazy" alt="Azizi Gardens, Meydan Dubai" src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑022</span></div>
+          <div class="card-body">
+            <div class="loc">Nad Al Sheba · Meydan</div>
+            <h3>Azizi Gardens — 409</h3>
+            <div class="price"><span class="aed">AED</span> 935,000</div>
+            <div class="specs"><span><b>1</b> bed</span><span><b>512</b> sqft</span></div>
+            <div class="note">Meydan Hotel &amp; racecourse view. Gym, pool, yoga room &amp; BBQ.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/w5xhcBe3gfx5YAGo7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1gphjPbxkXjAHx5sg4Y2MMg8RJ4aDpelx?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Azizi Riviera waterfront, MBR City Dubai" src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑023</span></div>
+          <div class="card-body">
+            <div class="loc">MBR City · Meydan</div>
+            <h3>Azizi Riviera 31 — 106</h3>
+            <div class="price"><span class="aed">AED</span> 1,310,000</div>
+            <div class="specs"><span><b>1</b> bed</span><span>Big size</span></div>
+            <div class="note">Community, lagoon &amp; boulevard view. Landscaped gardens &amp; on‑site retail.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/7i24meP21vmNPyY26" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1ZY6nFtixcdtPh5Bry6uZpJDPl8RjqGhz?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Furnished</span><img decoding="async" loading="lazy" alt="Azizi Riviera waterfront, MBR City Dubai" src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑024</span></div>
+          <div class="card-body">
+            <div class="loc">MBR City · Meydan</div>
+            <h3>Azizi Riviera 7 — 906</h3>
+            <div class="price"><span class="aed">AED</span> 1,600,000</div>
+            <div class="specs"><span><b>2</b> bed</span><span>Corner unit</span></div>
+            <div class="note">Direct premium canal &amp; pool view. Furnished corner unit.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/G8MzWdVVjpZdqgQT8" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1DmEID3GOAb53lOS5kiL22mP1-dlaT0Ff?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment · Hot offer</span><img decoding="async" loading="lazy" alt="Azizi Riviera waterfront, MBR City Dubai" src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑025</span></div>
+          <div class="card-body">
+            <div class="loc">MBR City · Meydan</div>
+            <h3>Azizi Riviera 26 — 229</h3>
+            <div class="price"><span class="aed">AED</span> 1,600,000</div>
+            <div class="note">Community &amp; pool view. Gym, yoga room, BBQ &amp; Zen garden.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/443JHUmAhh5HY1TS8" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1sKLgHmNnQhiCb9AOAKjCPdG3fUOHf9mr?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="apartment" data-reveal>
+          <div class="media"><span class="badge">Apartment</span><img decoding="async" loading="lazy" alt="Creek Beach waterfront, Dubai Creek Harbour" src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑026</span></div>
+          <div class="card-body">
+            <div class="loc">Dubai Creek Harbour</div>
+            <h3>Creek Beach · Savanna — 704</h3>
+            <div class="price"><span class="aed">AED</span> 2,750,000</div>
+            <div class="specs"><span><b>2</b> bed</span><span><b>2</b> bath</span><span><b>1,023</b> sqft</span></div>
+            <div class="note">Creek Beach &amp; sea view. Beach access, gym &amp; kids' pool. By Emaar.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/AQoSAGei5DBrSXYc7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1AfbQccIovuNBDQ6OB4NT0l6CLeqm7W6d?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <!-- ===== Villas & townhouses ===== -->
+        <article class="card" data-category="villa" data-reveal>
+          <div class="media"><span class="badge">Townhouse · Ready</span><img decoding="async" loading="lazy" alt="Damac Lagoons Mediterranean townhouses" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑011</span></div>
+          <div class="card-body">
+            <div class="loc">Damac Lagoons · Dubai</div>
+            <h3>Lagoons · Malta 1</h3>
+            <div class="price"><span class="aed">AED</span> 2,940,000</div>
+            <div class="specs"><span><b>4</b> bed</span><span><b>2,274</b> sqft BUA</span></div>
+            <div class="note">Single row, Oasis‑by‑Emaar view. Family pools, aqua gym &amp; floating cinema.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/CeJwa5nw8CABPQsTA" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1Q3nhmwntHDvogJ_IS4_Q7OnWdG1TvSLY?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="villa" data-reveal>
+          <div class="media"><span class="badge">Townhouse</span><img decoding="async" loading="lazy" alt="Damac Lagoons Santorini townhouse with pool" src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑012</span></div>
+          <div class="card-body">
+            <div class="loc">Damac Lagoons · Dubai</div>
+            <h3>Lagoons · Santorini 1</h3>
+            <div class="price"><span class="aed">AED</span> 3,320,000</div>
+            <div class="specs"><span><b>4</b> bed</span><span><b>2,274</b> sqft BUA</span></div>
+            <div class="note">Direct lake view, single row, long furnished garden.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/mLGgzNtVCMPgXpDn7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/11sj-xOs6QJITc85U5gXOSv4qUmZu0nsn?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="villa" data-reveal>
+          <div class="media"><span class="badge">Townhouse</span><img decoding="async" loading="lazy" alt="Damac Lagoons Malta townhouses" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑013</span></div>
+          <div class="card-body">
+            <div class="loc">Damac Lagoons · Dubai</div>
+            <h3>Lagoons · Malta 2</h3>
+            <div class="price"><span class="aed">AED</span> 3,500,000</div>
+            <div class="specs"><span><b>4</b> bed</span><span><b>2,227</b> sqft BUA</span></div>
+            <div class="note">Single row, close to the Central Hub.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/CeJwa5nw8CABPQsTA" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/13B2aTWOcOIl4U8aM2B-bRnGIQymSKd89?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="villa" data-reveal>
+          <div class="media"><span class="badge">Townhouse</span><img decoding="async" loading="lazy" alt="Damac Lagoons Santorini townhouse with pool" src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑014</span></div>
+          <div class="card-body">
+            <div class="loc">Damac Lagoons · Dubai</div>
+            <h3>Lagoons · Santorini 1</h3>
+            <div class="price"><span class="aed">AED</span> 3,670,000</div>
+            <div class="specs"><span><b>4</b> bed</span><span><b>2,229</b> sqft BUA</span></div>
+            <div class="note">Park view with direct access &amp; private garden, single row.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/emFA4SYPqZuCjW2N9" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1p8A1UHznuu_W9XqzGNhX10dPlfvEA31a?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="villa" data-reveal>
+          <div class="media"><span class="badge">Townhouse</span><img decoding="async" loading="lazy" alt="Damac Lagoons Costa Brava townhouse" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑015</span></div>
+          <div class="card-body">
+            <div class="loc">Damac Lagoons · Dubai</div>
+            <h3>Lagoons · Costa Brava 1</h3>
+            <div class="price"><span class="aed">AED</span> 3,950,000</div>
+            <div class="specs"><span><b>4</b> bed</span><span>Single row</span></div>
+            <div class="note">Prime location to the Central Hub. Family pools, aqua gym &amp; floating cinema.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/iwPWZG9jhjxnfzhG8" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1HKlvxIGpBK14sw1CHU6Jergdk-d8GNrY?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="villa" data-reveal>
+          <div class="media"><span class="badge">Townhouse · Handover soon</span><img decoding="async" loading="lazy" alt="The Valley Lillia townhouse, Dubai" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑027</span></div>
+          <div class="card-body">
+            <div class="loc">The Valley · Dubai</div>
+            <h3>The Valley · Lillia — TH‑297</h3>
+            <div class="price"><span class="aed">AED</span> 2,685,000</div>
+            <div class="specs"><span><b>3</b> bed + maid</span><span><b>4</b> bath</span><span><b>2,150</b> sqft BUA</span></div>
+            <div class="note">Handover within a month. Clubhouse, golden beach, sports village. By Emaar.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/CkdZURMmHeL32iXQA" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1x80YUIQ6rLw08NVZkn7X4m5jadNacy7n?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <!-- ===== Off‑plan ===== -->
+        <article class="card" data-category="offplan" data-reveal>
+          <div class="media"><span class="badge">Off‑plan · 2027</span><img decoding="async" loading="lazy" alt="Skyros by Samana tower, Arjan-Dubailand" src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑031</span></div>
+          <div class="card-body">
+            <div class="loc">Arjan–Dubailand · Dubai</div>
+            <h3>Skyros by Samana — 1024</h3>
+            <div class="price"><span class="aed">from AED</span> 775,000</div>
+            <div class="specs"><span>Studio</span><span>Private pool</span><span><b>432</b> sqft</span></div>
+            <div class="note">Handover 2027 on a payment plan. Miracle Garden view, rooftop park &amp; cinema.</div>
+            <div class="links"><a href="https://goo.gl/maps/qsGa3nsdRUUX9L7b9" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1m9OxY7AhnrXwOjTY47UOd2ZK1jlLu171?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="offplan" data-reveal>
+          <div class="media"><span class="badge">Off‑plan · 2028</span><img decoding="async" loading="lazy" alt="Oceanz by Danube seafront, Dubai Maritime City" src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑032</span></div>
+          <div class="card-body">
+            <div class="loc">Dubai Maritime City</div>
+            <h3>Oceanz by Danube · T2 — 2112</h3>
+            <div class="price"><span class="aed">from AED</span> 1,275,000</div>
+            <div class="specs"><span><b>1</b> bed</span><span>Full sea view</span></div>
+            <div class="note">Italian‑styled, handover 2028 on a payment plan. Pool, spa &amp; floating cinema.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/Sm2f5UrzdWxkcdW47" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1o2Jewn7zuLuk9aTRuvM36AngR05xUjaH?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="offplan" data-reveal>
+          <div class="media"><span class="badge">Off‑plan</span><img decoding="async" loading="lazy" alt="Reportage Vista waterfront, Al Reem Island Abu Dhabi" src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑033</span></div>
+          <div class="card-body">
+            <div class="loc">Al Reem Island · Abu Dhabi</div>
+            <h3>Reportage Vista 3 — Unit 2</h3>
+            <div class="price"><span class="aed">from AED</span> 1,999,000</div>
+            <div class="specs"><span>Sea view</span></div>
+            <div class="note">Al Reem Island waterfront. Pool, spa &amp; gym. By Reportage Prime Properties.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/E8gvqfCi1xej1Qqb7" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1FWOhe5CKrF1aEK6fG2_iNhktidYAeDYD?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="offplan" data-reveal>
+          <div class="media"><span class="badge">Off‑plan</span><img decoding="async" loading="lazy" alt="Volta Tower, Sheikh Zayed Road Dubai" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑034</span></div>
+          <div class="card-body">
+            <div class="loc">Sheikh Zayed Road · Dubai</div>
+            <h3>Volta Tower — 3302</h3>
+            <div class="price"><span class="aed">from AED</span> 2,125,000</div>
+            <div class="specs"><span>Burj Khalifa view</span></div>
+            <div class="note">On Sheikh Zayed Road. Sky pool, sky yoga, boxing zone &amp; jogging track. By Damac.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/fWNLjxkiJHmnX23R6" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1SZXSa3-ncQhsuIfuWNMGFwhqIDPnbJon?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <!-- ===== Investment (buildings & land) ===== -->
+        <article class="card" data-category="investment" data-reveal>
+          <div class="media"><span class="badge">Full building · Leased</span><img decoding="async" loading="lazy" alt="Al Salam 2 residential building, Liwan Dubai" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑029</span></div>
+          <div class="card-body">
+            <div class="loc">Liwan 2 · Dubai</div>
+            <h3>Al Salam 2 — Full Building</h3>
+            <div class="price"><span class="aed">AED</span> 18,100,000</div>
+            <div class="specs"><span><b>20</b> units</span><span>G+4</span><span><b>6.25%</b> ROI</span></div>
+            <div class="note">Single title deed, head‑leased to a management company to 2027. 16×1BR + 4×2BR.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/CJfVg4yp3LQC4nUW6" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1M_dfA7dwNG4E1-Erz9Bu3oackxtc_CMR?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="investment" data-reveal>
+          <div class="media"><span class="badge">Full building · Leased</span><img decoding="async" loading="lazy" alt="Al Salam 3 residential building, Liwan Dubai" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"><span class="ref">Ref. ZM‑030</span></div>
+          <div class="card-body">
+            <div class="loc">Liwan 2 · Dubai</div>
+            <h3>Al Salam 3 — Full Building</h3>
+            <div class="price"><span class="aed">AED</span> 34,500,000</div>
+            <div class="specs"><span><b>20</b> units</span><span>G+4</span><span><b>~5%</b> ROI</span></div>
+            <div class="note">Brand new, single title deed, leased to a government company 3 yrs to 2029.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/87JzW8aiKgCc2aD8A" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/1b403g5ufteY5LqJMrlbKx6EffbZU4HcP?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-category="investment" data-reveal>
+          <div class="media"><span class="badge">Plot · Sale or JV</span><span class="ref">Ref. ZM‑028</span></div>
+          <div class="card-body">
+            <div class="loc">International City · Dubai</div>
+            <h3>Warsan 4 — Residential Plot</h3>
+            <div class="price"><span class="aed">AED</span> 20,200,000</div>
+            <div class="specs"><span><b>26,057</b> sqft plot</span><span>G+6</span></div>
+            <div class="note">Sale or JV (plot value AED 20M). Drawings under Nakheel approval; 117,708 sqft BUA.</div>
+            <div class="links"><a href="https://maps.app.goo.gl/wKWphgjaqtU5NQxD9" target="_blank" rel="noopener noreferrer">Location ↗</a><a href="https://drive.google.com/drive/folders/14rhw5SF7pR3_tFeEnIcq2mJWowpWq1hX?usp=drive_link" target="_blank" rel="noopener noreferrer">Photos &amp; video ↗</a></div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="portfolio-foot">
+        <a class="btn btn-ghost" href="#contact">Request the full private book <span class="arw">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Communities ============ -->
+  <section class="section communities" id="communities">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow" data-reveal>Where we operate</span>
+          <h2 class="display" data-reveal data-delay="1">The communities <em>we know street by street</em></h2>
+        </div>
+        <p class="lede aside" data-reveal data-delay="2">We don't list everywhere. We go deep in the addresses where our clients actually want to live and invest.</p>
+      </div>
+
+      <div class="grid-comm">
+        <article class="comm c-1" data-reveal>
+          <div class="media"><img decoding="async" loading="lazy" alt="Dubai residential towers" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"></div>
+          <div class="num">01 — Core</div>
+          <h3>Jumeirah Village Circle</h3>
+          <p>Where our book is deepest — owner units across Binghatti Nova, Heights, Apex, Gardenia, House &amp; Crest.</p>
+          <div class="from">10 units · from AED 950K</div>
+        </article>
+        <article class="comm c-2" data-reveal data-delay="1">
+          <div class="media"><img decoding="async" loading="lazy" alt="Mediterranean-style townhouse community" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"></div>
+          <div class="num">02 — Townhouses</div>
+          <h3>Damac Lagoons</h3>
+          <p>Mediterranean‑themed 4‑bed townhouses — Malta, Santorini &amp; Costa Brava — single row, on the water.</p>
+          <div class="from">4‑bed TH · from AED 2.94M</div>
+        </article>
+        <article class="comm c-3" data-reveal>
+          <div class="media"><img decoding="async" loading="lazy" alt="Business Bay canal towers" src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"></div>
+          <div class="num">03</div>
+          <h3>Business Bay</h3>
+          <div class="from">from AED 1.59M</div>
+        </article>
+        <article class="comm c-4" data-reveal data-delay="1">
+          <div class="media"><img decoding="async" loading="lazy" alt="Waterfront residential towers" src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1000&q=80" onerror="this.remove()"></div>
+          <div class="num">04</div>
+          <h3>Meydan · MBR City</h3>
+          <div class="from">from AED 935K</div>
+        </article>
+        <article class="comm c-5" data-reveal data-delay="2">
+          <div class="media"><img decoding="async" loading="lazy" alt="Green golf community" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80" onerror="this.remove()"></div>
+          <div class="num">05</div>
+          <h3>Dubai Hills</h3>
+          <div class="from">from AED 1.6M</div>
+        </article>
+        <article class="comm c-6" data-reveal>
+          <div class="media"><img decoding="async" loading="lazy" alt="Waterfront towers and promenade at sunset" src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"></div>
+          <div class="num">06 — Waterfront</div>
+          <h3>Dubai Creek Harbour</h3>
+          <p>Emaar's Creek Beach — beach access, sea views and the next Downtown taking shape.</p>
+          <div class="from">from AED 2.75M</div>
+        </article>
+        <article class="comm c-7" data-reveal data-delay="1">
+          <div class="media"><img decoding="async" loading="lazy" alt="New coastal development" src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=1200&q=80" onerror="this.remove()"></div>
+          <div class="num">07 — New launches</div>
+          <h3>Off‑plan &amp; payment plans</h3>
+          <p>Skyros, Oceanz and Volta — early entry on developer payment plans across Dubai &amp; Abu Dhabi.</p>
+          <div class="from">from AED 775K</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ How we work ============ -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow" data-reveal>How we work</span>
+          <h2 class="display" data-reveal data-delay="1">A brokerage, <em>and then some</em></h2>
+        </div>
+        <p class="lede aside" data-reveal data-delay="2">Buying property in Dubai is rarely just the deal. We handle everything that surrounds it.</p>
+      </div>
+
+      <div class="grid-serv">
+        <div class="serv" data-reveal>
+          <div class="idx">S/01</div>
+          <h3>Off‑plan advisory</h3>
+          <p>Direct developer allocations, honest yield modelling, and payment plans structured around your cash flow — not the launch‑day hype.</p>
+          <ul><li>Developer access</li><li>Payment plans</li><li>Resale strategy</li></ul>
+        </div>
+        <div class="serv" data-reveal data-delay="1">
+          <div class="idx">S/02</div>
+          <h3>Golden Visa &amp; residency</h3>
+          <p>A property purchase can secure 10‑year UAE residency. We coordinate the paperwork end to end with our legal partners.</p>
+          <ul><li>Eligibility check</li><li>Documentation</li><li>Family sponsorship</li></ul>
+        </div>
+        <div class="serv" data-reveal>
+          <div class="idx">S/03</div>
+          <h3>Portfolio &amp; yield management</h3>
+          <p>Leasing, tenant vetting, service‑charge oversight and quarterly reporting — your Dubai assets run without your inbox.</p>
+          <ul><li>Leasing</li><li>Reporting</li><li>Maintenance</li></ul>
+        </div>
+        <div class="serv" data-reveal data-delay="1">
+          <div class="idx">S/04</div>
+          <h3>Private &amp; off‑market</h3>
+          <p>Discreet acquisitions and disposals for clients who prefer their transactions to stay off the public listing feeds.</p>
+          <ul><li>Off‑market book</li><li>Buyer representation</li><li>Confidentiality</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Track record band ============ -->
+  <section class="band section">
+    <div class="lattice"></div>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow on-dark" data-reveal>Why owner‑direct</span>
+        <h2 data-reveal data-delay="1">Every unit on this page is listed by <em>the person who owns it</em> — so the price you see is the price to negotiate, not a markup on a markup.</h2>
+        <div class="quote-src" data-reveal data-delay="2">Sourced &amp; represented directly by ZM Real Estate</div>
+      </div>
+      <div class="band-stats" data-reveal data-delay="1">
+        <div class="b"><div class="n">100%</div><div class="l">Owner‑direct — no sub‑listings</div></div>
+        <div class="b"><div class="n">AED 775K</div><div class="l">Lowest entry on the book</div></div>
+        <div class="b"><div class="n">AED 34.5M</div><div class="l">Largest asset — a full building</div></div>
+        <div class="b"><div class="n">15</div><div class="l">Communities · Dubai &amp; Abu Dhabi</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Statement ============ -->
+  <section class="section statement" id="firm">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" data-reveal>The firm</span>
+        <p class="big" data-reveal data-delay="1">We'd rather place <em>one right home</em> than list a hundred we don't believe in.</p>
+      </div>
+      <div class="body" data-reveal data-delay="1">
+        <p>ZM Real Estate is a boutique Dubai brokerage. We keep our book small on purpose, so that every client works with a principal who actually knows the building, the developer's track record, and what the unit next door really traded for.</p>
+        <p>We were founded by operators who bought and sold their own property in Dubai long before they advised on anyone else's. That's the lens we bring to every viewing — is this a good buy, honestly, or is it just a good story?</p>
+        <p>Boutique by choice, we're accountable for every number we put in front of you — and we'll tell you plainly when a deal isn't worth doing.</p>
+        <div class="sign">
+          <span class="brand"><span class="mono">ZM</span></span>
+          <span class="who"><b>Zumran &amp; Mavia</b><span>Founding partners</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow on-dark" data-reveal>Start a conversation</span>
+        <h2 data-reveal data-delay="1">Tell us what <em>home</em> looks like to you.</h2>
+        <p class="intro" data-reveal data-delay="2">Share a few details and a ZM principal will call you back within one business day — no call centre, no pressure.</p>
+        <div class="contact-meta" data-reveal data-delay="2">
+          <div class="row"><div class="k">Office</div><div class="v">Al Ain, Abu Dhabi, UAE</div></div>
+          <div class="row"><div class="k">Direct</div><div class="v"><a href="tel:+971547742284">+971 54 774 2284</a> · <a href="tel:+971566074264">+971 56 607 4264</a></div></div>
+          <div class="row"><div class="k">WhatsApp</div><div class="v"><a href="https://wa.me/971566074264">+971 56 607 4264</a></div></div>
+          <div class="row"><div class="k">Email</div><div class="v"><a href="mailto:hello@zmrealestate.ae">hello@zmrealestate.ae</a></div></div>
+          <div class="row"><div class="k">Licensing</div><div class="v">Licensing details available on request</div></div>
+        </div>
+      </div>
+
+      <div class="form" data-reveal data-delay="1">
+        <form id="leadForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New ZM Real Estate website enquiry">
+          <input type="hidden" name="_format" value="plain">
+          <input type="hidden" name="_next" value="">
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input id="website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="two">
+            <div class="field"><label for="fn">Full name</label><input id="fn" name="name" type="text" placeholder="Your name" required></div>
+            <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" placeholder="+971 …" required></div>
+          </div>
+          <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" placeholder="you@email.com" required></div>
+          <div class="two">
+            <div class="field"><label for="int">I'm interested in</label>
+              <select id="int" name="interest">
+                <option>Buying a home</option>
+                <option>Investing / off‑plan</option>
+                <option>Selling a property</option>
+                <option>Golden Visa &amp; residency</option>
+                <option>Property management</option>
+              </select>
+            </div>
+            <div class="field"><label for="bud">Budget</label>
+              <select id="bud" name="budget">
+                <option>Under AED 2M</option>
+                <option>AED 2M – 5M</option>
+                <option>AED 5M – 15M</option>
+                <option>AED 15M – 40M</option>
+                <option>AED 40M+</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="msg">Anything else? (optional)</label><textarea id="msg" name="message" placeholder="Preferred communities, timeline, must‑haves…"></textarea></div>
+          <div class="field consent-field">
+            <label style="display:flex;gap:.7em;align-items:flex-start;text-transform:none;letter-spacing:0;font-family:var(--f-body);font-size:.78rem;color:var(--dark-muted);">
+              <input id="consent" name="consent" type="checkbox" value="yes" required style="width:auto;margin-top:.25em;accent-color:var(--brass);">
+              <span>I agree to ZM Real Estate contacting me about my enquiry and to the <a href="/privacy.html" style="text-decoration:underline;">Privacy Policy</a>.</span>
+            </label>
+          </div>
+          <button class="btn" type="submit" id="submitLead">Request a callback <span class="arw">→</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="note">By submitting, you agree to be contacted about your enquiry. See our <a href="/privacy.html" style="text-decoration:underline;">Privacy Policy</a> for details.</p>
+        </form>
+        <div class="form-ok" id="formOk" role="status">
+          <div class="tick">✓</div>
+          <h3>Thank you — we've got it.</h3>
+          <p>A ZM principal will reach out within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="#top" aria-label="ZM Real Estate">
+          <span class="mono">ZM</span>
+          <span class="word"><b>ZM Real Estate</b><span>Brokerage · Dubai</span></span>
+        </a>
+        <p class="about">A boutique Dubai brokerage placing owner‑direct apartments, townhouses and off‑plan investments — represented directly, priced honestly.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#portfolio">Properties</a></li>
+          <li><a href="#communities">Communities</a></li>
+          <li><a href="#services">How we work</a></li>
+          <li><a href="#firm">The firm</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Communities</h4>
+        <ul>
+          <li><a href="#communities">Jumeirah Village Circle</a></li>
+          <li><a href="#communities">Damac Lagoons</a></li>
+          <li><a href="#communities">Business Bay</a></li>
+          <li><a href="#communities">Meydan · MBR City</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+971547742284">+971 54 774 2284</a></li>
+          <li><a href="tel:+971566074264">+971 56 607 4264</a></li>
+          <li><a href="mailto:hello@zmrealestate.ae">hello@zmrealestate.ae</a></li>
+          <li>Al Ain, Abu Dhabi, UAE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="yr">2026</span> ZM Real Estate · Al Ain, Abu Dhabi</span>
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://wa.me/971566074264" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+      <span class="legal-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></span>
+      <span>Made in Dubai</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Header state + hero-aware styling
+  var head = document.getElementById('head');
+  var hero = document.getElementById('hero');
+  function onScroll(){
+    var scrolled = window.scrollY > 24;
+    head.classList.toggle('is-scrolled', scrolled);
+    var heroBottom = hero ? hero.offsetHeight - 80 : 0;
+    head.classList.toggle('on-hero', window.scrollY < heroBottom);
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile drawer
+  var drawer = document.getElementById('drawer');
+  var menuBtn = document.getElementById('menuBtn');
+  function setDrawer(open){
+    drawer.classList.toggle('open', open);
+    drawer.setAttribute('aria-hidden', String(!open));
+    menuBtn.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  if(menuBtn && drawer){ menuBtn.addEventListener('click', function(){ setDrawer(true); });
+  document.getElementById('drawerClose').addEventListener('click', function(){ setDrawer(false); });
+  drawer.querySelectorAll('[data-close]').forEach(function(a){ a.addEventListener('click', function(){ setDrawer(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setDrawer(false); }); }
+
+
+  // Portfolio filter
+  var filterBtns = document.querySelectorAll('.filters button');
+  var cards = document.querySelectorAll('#grid .card');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.setAttribute('aria-pressed','false'); });
+      btn.setAttribute('aria-pressed','true');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function(c){
+        var show = (f === 'all') || (c.getAttribute('data-category') === f);
+        c.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
+
+  // Scroll reveal
+  var reveals = document.querySelectorAll('[data-reveal]');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('is-visible'); io.unobserve(en.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('is-visible'); });
+  }
+
+  // Lead form — sends to the configured Formspree endpoint.
+  // IMPORTANT: replace YOUR_FORM_ID in the form action with your real Formspree form ID.
+  var form = document.getElementById('leadForm');
+  var formStatus = document.getElementById('formStatus');
+  var submitLead = document.getElementById('submitLead');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+
+    if(!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+
+    if(form.querySelector('[name="_gotcha"]').value){
+      return; // bot trap
+    }
+
+    var endpoint = form.getAttribute('action');
+    if(!endpoint || endpoint.indexOf('YOUR_FORM_ID') !== -1){
+      formStatus.textContent = 'Form setup is incomplete. Please configure the form endpoint before launch.';
+      formStatus.className = 'form-status error';
+      return;
+    }
+
+    submitLead.disabled = true;
+    submitLead.setAttribute('aria-busy','true');
+    formStatus.textContent = 'Sending your enquiry…';
+    formStatus.className = 'form-status';
+
+    try{
+      var response = await fetch(endpoint, {
+        method:'POST',
+        body:new FormData(form),
+        headers:{'Accept':'application/json'}
+      });
+
+      if(!response.ok) throw new Error('Submission failed');
+
+      form.style.display = 'none';
+      document.getElementById('formOk').classList.add('show');
+      formStatus.textContent = '';
+    }catch(error){
+      formStatus.textContent = 'We could not send your enquiry right now. Please call or WhatsApp us directly.';
+      formStatus.className = 'form-status error';
+      submitLead.disabled = false;
+      submitLead.removeAttribute('aria-busy');
+    }
+  });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"RealEstateAgent",
+  "name":"ZM Real Estate",
+  "url":"https://YOUR-DOMAIN.example/",
+  "email":"mailto:hello@zmrealestate.ae",
+  "telephone":"+971547742284",
+  "areaServed":"Dubai, United Arab Emirates",
+  "description":"Boutique Dubai real estate brokerage offering owner-direct apartments, townhouses and off-plan opportunities.",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Al Ain",
+    "addressRegion":"Abu Dhabi",
+    "addressCountry":"AE"
+  }
+}
+</script>
+
+</body>
+</html>
