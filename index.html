@@ -8,20 +8,17 @@
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 <meta name="theme-color" content="#1A1712" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
-<link rel="canonical" href="https://YOUR-DOMAIN.example/" />
+<link rel="canonical" href="https://zm-estates.vercel.app/" />
 
 <!-- Social sharing -->
 <meta property="og:site_name" content="ZM Real Estate" />
 <meta property="og:title" content="ZM Real Estate — Private property brokerage in Dubai" />
 <meta property="og:description" content="Owner-direct apartments, townhouses and off-plan opportunities across Dubai." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://YOUR-DOMAIN.example/" />
-<meta property="og:image" content="https://YOUR-DOMAIN.example/og-image.jpg" />
-<meta property="og:image:alt" content="ZM Real Estate — Dubai property brokerage" />
-<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:url" content="https://zm-estates.vercel.app/" />
+<meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="ZM Real Estate — Private property brokerage in Dubai" />
 <meta name="twitter:description" content="Owner-direct apartments, townhouses and off-plan opportunities across Dubai." />
-<meta name="twitter:image" content="https://YOUR-DOMAIN.example/og-image.jpg" />
 
 <!-- Favicon -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -1262,7 +1259,7 @@
     <div class="bottom">
       <span>© <span id="yr">2026</span> ZM Real Estate · Al Ain, Abu Dhabi</span>
       <div class="socials">
-        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://wa.me/971566074264" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://wa.me/971566074264" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
       <span class="legal-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></span>
       <span>Made in Dubai</span>
@@ -1330,10 +1327,14 @@
   }
 
   // Lead form — sends to the configured Formspree endpoint.
-  // IMPORTANT: replace YOUR_FORM_ID in the form action with your real Formspree form ID.
+  // Until a Formspree ID is configured, the visitor can send a prepared email.
   var form = document.getElementById('leadForm');
   var formStatus = document.getElementById('formStatus');
   var submitLead = document.getElementById('submitLead');
+  if(form.getAttribute('action').indexOf('YOUR_FORM_ID') !== -1){
+    submitLead.innerHTML = 'Email a callback request <span class="arw">→</span>';
+    form.querySelector('.note').firstChild.textContent = 'Your email app will open with the enquiry ready to send. See our ';
+  }
 
   form.addEventListener('submit', async function(e){
     e.preventDefault();
@@ -1349,8 +1350,11 @@
 
     var endpoint = form.getAttribute('action');
     if(!endpoint || endpoint.indexOf('YOUR_FORM_ID') !== -1){
-      formStatus.textContent = 'Form setup is incomplete. Please configure the form endpoint before launch.';
-      formStatus.className = 'form-status error';
+      var details = new FormData(form);
+      var body = 'Name: ' + details.get('name') + '\nPhone: ' + details.get('phone') + '\nEmail: ' + details.get('email') + '\nInterest: ' + details.get('interest') + '\nBudget: ' + details.get('budget') + '\nMessage: ' + (details.get('message') || '');
+      formStatus.textContent = 'Your email app will open. Please send the prepared message to finish your enquiry.';
+      formStatus.className = 'form-status';
+      window.location.href = 'mailto:hello@zmrealestate.ae?subject=' + encodeURIComponent('ZM Real Estate callback request') + '&body=' + encodeURIComponent(body);
       return;
     }
 
@@ -1385,7 +1389,7 @@
   "@context":"https://schema.org",
   "@type":"RealEstateAgent",
   "name":"ZM Real Estate",
-  "url":"https://YOUR-DOMAIN.example/",
+  "url":"https://zm-estates.vercel.app/",
   "email":"mailto:hello@zmrealestate.ae",
   "telephone":"+971547742284",
   "areaServed":"Dubai, United Arab Emirates",
